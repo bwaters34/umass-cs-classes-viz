@@ -33,6 +33,7 @@ colnames(nodes.df) <- c("id","label") #add group
 nodes.df$size <- sizes
 nodes.df$color.highlight.background <- "orange"
 nodes.df$color.highlight.border <- "darkred"
+nodes.df$font.size = 18
 #todo:
 #add search feature
 #being able to select subplans?
