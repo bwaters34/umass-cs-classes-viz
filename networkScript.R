@@ -31,9 +31,11 @@ sizes <- c(sizes, rep(15,numSubplans))
 nodes.df <- data.frame(1:length(nodeList),nodeList)
 colnames(nodes.df) <- c("id","label") #add group
 nodes.df$size <- sizes
+nodes.df$sizeLabels <- factor(nodes.df$size, labels = c("small", "large"))
 nodes.df$color.highlight.background <- "orange"
 nodes.df$color.highlight.border <- "darkred"
-nodes.df$font.size = 18
+nodes.df$color.background <- c("dodgerblue3", "gold")[nodes.df$sizeLabels]
+nodes.df$font.size <- 18
 #todo:
 #add search feature
 #being able to select subplans?
