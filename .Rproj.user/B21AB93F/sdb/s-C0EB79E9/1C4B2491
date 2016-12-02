@@ -1,0 +1,18 @@
+{
+    "contents" : "library(visNetwork)\nclasslist.df <- data.frame(read.csv(\"bs-cs-tracking-2016.csv\",stringsAsFactors = FALSE,strip.white = TRUE,blank.lines.skip = TRUE))\n\n#get list of all classes\nstackedClasses <- stack(classlist.df)\nallClasses = sort(unique(stackedClasses[1])[,1],decreasing = FALSE)\nallClasses = allClasses[-1] #remove empty string at top of list\nnumClasses <- length(allClasses)\nnumSubplans <- ncol(classlist.df)\nedges.df <- data.frame(from=integer(), to=integer()) #so we can connect subplans to classes\n\nfor(r in 1:numClasses){\n  for(c in 1:numSubplans){\n    if(is.element(allClasses[r],classlist.df[,c])){\n#      cat(allClasses[r],\" is in \",(colnames(classlist.df))[c],\"\\n\")\n      edges.df <-rbind(edges.df, c(r,c+numClasses))\n    }\n  }\n} \n\ncolnames(edges.df) <- c(\"from\",\"to\")\n\n#what we need\n#list of nodes:  nodes include:\n#tracks and classes\n#list of edges:  contain from and to\n\nnodeList <- c(allClasses,colnames(classlist.df))\nsizes <- rep(5,numClasses)\nsizes <- c(sizes, rep(15,numSubplans))\nnodes.df <- data.frame(1:length(nodeList),nodeList)\ncolnames(nodes.df) <- c(\"id\",\"label\") #add group\nnodes.df$size <- sizes\nnodes.df$color.highlight.background <- \"orange\"\nnodes.df$color.highlight.border <- \"darkred\"\n#todo:\n#add search feature\n#being able to select subplans?\nvisNetwork(main = \"Subplans and Connecting Classes\", nodes = nodes.df, edges = edges.df)\n\n\n",
+    "created" : 1479487625781.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "982670172",
+    "id" : "1C4B2491",
+    "lastKnownWriteTime" : 1480654957,
+    "path" : "~/My Programs/UMass CS Tracking Visualization/networkScript.R",
+    "project_path" : "networkScript.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

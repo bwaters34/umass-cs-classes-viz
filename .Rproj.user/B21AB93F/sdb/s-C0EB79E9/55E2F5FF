@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1479488012319.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "55E2F5FF",
+    "lastKnownWriteTime" : 542395936,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "o43ybwlybe",
+        "caption" : "coordinatesClasses",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=coordinatesClasses&cache_key=o43ybwlybe",
+        "displayedObservations" : 56,
+        "environment" : "",
+        "object" : "coordinatesClasses",
+        "totalObservations" : 56,
+        "variables" : 2
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
