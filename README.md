@@ -7,7 +7,7 @@ This graph makes it easy to choose classes that fulfill multiple subplans you ar
 
 
 
-**Download presentation.html for the interactive version!  It has draggable nodes!**
+**Download presentation2.html for the interactive version!  It has draggable nodes!**
 
 Screenshot:
 ![alt tag](https://raw.githubusercontent.com/bwaters34/umass-cs-classes-viz/master/screenshot3.png)
