@@ -18,12 +18,12 @@ for(r in 1:numClasses){
   }
 } 
 
-colnames(edges.df) <- c("from","to")
-
 #what we need
 #list of nodes:  nodes include:
 #tracks and classes
 #list of edges:  contain from and to
+
+colnames(edges.df) <- c("from","to")
 
 nodeList <- c(allClasses,colnames(classlist.df))
 sizes <- rep(5,numClasses)
@@ -38,7 +38,7 @@ nodes.df$color.background <- c("dodgerblue3", "gold")[nodes.df$sizeLabels]
 nodes.df$font.size <- 18
 #todo:
 #add search feature
-#being able to select subplans?
+#add selector checkbox for subplans on the side
 visNetwork(main = "Subplans and Connecting Classes", nodes = nodes.df, edges = edges.df)
 
 
