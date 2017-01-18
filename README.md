@@ -12,7 +12,7 @@ This graph makes it easy to choose classes that fulfill multiple subplans you ar
 Screenshot:
 ![alt tag](https://raw.githubusercontent.com/bwaters34/umass-cs-classes-viz/master/screenshot3.png)
 
-For comparison, here is the provided way to view classes and subplans (from [here](https://www.cics.umass.edu/sites/default/files/uploads/Academics/bs-cs-tracking-2016.pdf)	:
+For comparison, here is the provided way to view classes and subplans (from [here](https://www.cics.umass.edu/sites/default/files/uploads/Academics/bs-cs-tracking-2016.pdf))	:
 
 ![alt tag](https://raw.githubusercontent.com/bwaters34/umass-cs-classes-viz/master/trackingsheet.png)
 
